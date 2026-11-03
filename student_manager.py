@@ -9,3 +9,6 @@ def show_students():
         print(f"{s['id']} - {s['name']} - GPA: {s['gpa']}")
 
 # === VI TRI THEM TINH NANG MOI O DUOI DONG NAY ===
+def search_student(keyword):
+    results = [s for s in students if keyword.lower() in s["name"].lower()]
+    return results
