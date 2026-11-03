@@ -1,4 +1,4 @@
-# student_manager.py - Phien ban chuan sau khi gop
+# student_manager.py - Phien ban chuan
 students = [
     {"id": "SV01", "name": "Nguyen Van A", "gpa": 3.5},
     {"id": "SV02", "name": "Tran Thi B", "gpa": 3.8}
@@ -21,3 +21,5 @@ def delete_student(sv_id):
     global students
     students = [s for s in students if s["id"] != sv_id]
     print(f"Da xoa sinh vien co ma: {sv_id}")
+
+# Hotfix v1.0.1: Validated all 3 features
