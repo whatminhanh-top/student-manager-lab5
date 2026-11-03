@@ -9,3 +9,7 @@ def show_students():
         print(f"{s['id']} - {s['name']} - GPA: {s['gpa']}")
 
 # === VI TRI THEM TINH NANG MOI O DUOI DONG NAY ===
+    def delete_student(sv_id):
+    global students
+    students = [s for s in students if s["id"] != sv_id]
+    print(f"Da xoa sinh vien co ma: {sv_id}")
